@@ -17,8 +17,37 @@
 <h1 style="font-weight: bold; text-transform: uppercase;">There Are 2 types of Function argument Are their</h1>
 <ol>
     <li style="color: brown;">positional argument</li>
+    // positional argument
+    function abc(Motherage, daughterage){
+        var age = Motherage-daughterage;
+        var totalage = Motherage + daughterage;
+        return { difference: age , totalage : totalage};
+    }
+    var result = abc(46,20);
+    document.write("the age difference is"," ",result.difference);
+    document.write("<br>");
+    document.write("the total age of both is", " ",result.totalage);
+    document.write("<br>");
+    document.write("<br>");
+
+
     <li style="color: rgb(1, 53, 53);">keyword argument</li>
+    // keyword argument
+    function colours(redBalloon = 6 ,greenballoon = 5){
+        var totalBalloons = redBalloon + greenballoon;
+        var differofballoon = redBalloon - greenballoon;
+        return { sum :totalBalloons , Subtract: differofballoon};
+    }
+    var result1= colours();
+    document.write("the Total balloons in the air is", " ",result1.sum);
+    document.write("<br>");
+    document.write("the difference in the ballon is ", " ", result1.Subtract);
+    document.write("<br>")
+    
+    
 </ol>
+
+<h2>YOu can Check the Javasript Code On Sources</h2>
 <script>
     var a = 89;
     a--;
