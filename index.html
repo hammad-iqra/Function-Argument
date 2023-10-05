@@ -47,7 +47,13 @@
     
 </ol>
 
-<h2>YOu can Check the Javasript Code On Sources</h2>
+<h3 style="color: black; background-color: aqua;">Map Function</h3>
+<p style="color: blueviolet;">var <span>number = [1,2,3,4,5]</span> </p>
+<p style="color: brown;">var <span> table = function(x){ </br> return x*2}</span></p>
+<p style="color: red;">var <span> solving = number.map(table);</span></p>
+<button id="result">Calculate</button>
+<p id="demo"></p>
+
 <script>
     var a = 89;
     a--;
@@ -63,11 +69,11 @@
         return { difference: age , totalage : totalage};
     }
     var result = abc(46,20);
-    document.write("the age difference is"," ",result.difference);
-    document.write("<br>");
-    document.write("the total age of both is", " ",result.totalage);
-    document.write("<br>");
-    document.write("<br>");
+    console.log("the age difference is"," ",result.difference);
+    console.log("<br>");
+    console.log("the total age of both is", " ",result.totalage);
+    console.log("<br>");
+console.log("<br>");
 
     
 // keyword argument
@@ -77,25 +83,22 @@ function colours(redBalloon = 6 ,greenballoon = 5){
     return { sum :totalBalloons , Subtract: differofballoon};
 }
 var result1= colours();
-document.write("the Total balloons in the air is", " ",result1.sum);
-document.write("<br>");
-document.write("the difference in the ballon is ", " ", result1.Subtract);
-document.write("<br>")
+console.log("the Total balloons in the air is", " ",result1.sum);
+console.log("<br>");
+console.log("the difference in the ballon is ", " ", result1.Subtract);
+console.log("<br>")
 
-// function bio (F_name,L_name,Age){
+// create Map
+var number = [1, 2, 3, 4, 5];
 
-//     document.write("My F_name is ", " " , F_name , "<br>");
-//     document.write("My L_name is ", " " , L_name , "<br>");
-//     document.write("My Age is ", " " , Age , "<br>");
+  var table = function(x) {
+    return x * 2;
+  };
 
-
-// }
-// var userF_name = prompt("Enter your F_name");
-// var userL_name = prompt("Enter your L_name");
-// var userAge = prompt("Enter your Age");
-
-// bio(userF_name, userL_name, userAge);
-    
+ document.getElementById("result").addEventListener("click", function(){
+    var solving = number.map(table);
+    document.getElementById("demo").innerHTML = solving;
+ })
 
     </script>
 </body>
