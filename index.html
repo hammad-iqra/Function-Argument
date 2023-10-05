@@ -54,6 +54,12 @@
 <button id="result">Calculate</button>
 <p id="demo"></p>
 
+<h4 style="background-color: blue;"> Arrow Function Js</h4>
+<p>var <span style="color: tomato;"> multiply = (a,b) => a*b</span></p>
+<p style="color: red;">var product = (3,4);</p>
+<button id="result2" style="background-color: aqua;">ShowTheResult</button>
+<p id="demo2"></p>
+
 <script>
     var a = 89;
     a--;
@@ -99,6 +105,14 @@ var number = [1, 2, 3, 4, 5];
     var solving = number.map(table);
     document.getElementById("demo").innerHTML = solving;
  })
+//  create Arrow Function
+var multiply = (a,b) => a*b;
+
+document.getElementById("result2").addEventListener("click",() =>{
+    var product = multiply(3,4);
+    document.getElementById("demo2").innerHTML = product;
+})
+
 
     </script>
 </body>
